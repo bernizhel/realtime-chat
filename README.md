@@ -1,7 +1,5 @@
 # Realtime Chat application
-A real time chat created with react, graphql yoga &amp; apollo
-
-# How to use
+### How to use
 
 1. `git clone https://github.com/bernizhel/realtime-chat.git`
 2. `cd realtime-chat`
