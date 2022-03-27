@@ -1,9 +1,9 @@
 import { useSubscription } from '@apollo/client';
 import { Container, Card } from 'react-bootstrap';
-import { GET_MESSAGES } from '../api/graphql';
+import { SUBSCRIBE_MESSAGES } from '../api/graphql';
 
 export const Messages = ({ currentUser }) => {
-    const { data } = useSubscription(GET_MESSAGES);
+    const { data } = useSubscription(SUBSCRIBE_MESSAGES);
     if (!data) {
         return null;
     }
