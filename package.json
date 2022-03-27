@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "install": "concurrently \"pnpm install --prefix server\" \"pnpm install --prefix client\" \"pnpm install\"",
+        "install": "pnpm install && concurrently \"pnpm install --prefix server\" \"pnpm install --prefix client\" \"pnpm install\"",
         "start": "concurrently \"pnpm start --prefix server\" \"pnpm start --prefix client\""
     },
     "devDependencies": {
