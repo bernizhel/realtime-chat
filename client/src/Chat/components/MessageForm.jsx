@@ -11,7 +11,7 @@ export const MessageForm = ({ onUserChange }) => {
         content: '',
     });
     const onSubmit = () => {
-        if (message.content.length > 0) {
+        if (message.content.length > 0 && message.user.length > 0) {
             postMessage({ variables: message });
             setMessage({ ...message, content: '' });
         }

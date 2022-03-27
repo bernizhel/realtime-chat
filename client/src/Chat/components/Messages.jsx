@@ -1,9 +1,9 @@
-import { useQuery } from '@apollo/client';
+import { useSubscription } from '@apollo/client';
 import { Container, Card } from 'react-bootstrap';
 import { GET_MESSAGES } from '../api/graphql';
 
 export const Messages = ({ currentUser }) => {
-    const { data } = useQuery(GET_MESSAGES);
+    const { data } = useSubscription(GET_MESSAGES);
     if (!data) {
         return null;
     }
