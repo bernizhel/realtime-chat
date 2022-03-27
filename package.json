@@ -1,0 +1,29 @@
+{
+    "scripts": {
+        "install": "concurrently \"pnpm install --prefix server\" \"pnpm install --prefix client\" \"pnpm install\"",
+        "start": "concurrently \"pnpm start --prefix server\" \"pnpm start --prefix client\""
+    },
+    "devDependencies": {
+        "concurrently": "^7.0.0",
+        "cz-conventional-changelog": "^3.3.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "name": "realtime-chat",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bernizhel/realtime-chat.git"
+    },
+    "author": "Danil Kosenko <detrop.1995@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/bernizhel/realtime-chat/issues"
+    },
+    "homepage": "https://github.com/bernizhel/realtime-chat#readme"
+}

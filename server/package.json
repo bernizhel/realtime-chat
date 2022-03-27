@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    },
+    "main": "index.js",
+    "name": "realtime-chat-server",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Danil Kosenko <detrop.1995@gmail.com>",
+    "license": "MIT"
+}
